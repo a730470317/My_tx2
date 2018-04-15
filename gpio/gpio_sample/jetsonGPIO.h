@@ -62,7 +62,7 @@ enum pinValues {
     off = 0,  // synonym for things like lights
     on = 1
 }  ;
-
+/*
 enum jetsonGPIONumber {
     gpio57  =  57,    // J3A1 - Pin 50
 	gpio160 = 160,	  // J3A2 - Pin 40	
@@ -84,7 +84,15 @@ enum jetsonTX1GPIONumber {
        gpio187 = 187,    // J21 - Pin 37 - Output - GPIO8_ALS_PROX_INT
        gpio219 = 219,    // J21 - Pin 29 - Output - GPIO19_AUD_RST
 } ;
+*/
 
+
+enum TX2_GPIO{
+        gpio_0 = 388,
+        gpio_1 = 298,
+        gpio_2 = 480,
+        gpio_3 = 486,
+};
 
 int gpioExport ( jetsonGPIO gpio ) ;
 int gpioUnexport ( jetsonGPIO gpio ) ;
